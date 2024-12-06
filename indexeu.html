@@ -1,16 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio do Desenvolvedor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="root"></div>
-    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="app.js"></script>
+  <!-- Cabeçalho com navegação -->
+  <header class="header">
+    <div class="logo">Dev<span>Portfólio</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sessão de boas-vindas -->
+  <section class="hero">
+    <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
+    <p>Desenvolvedor Full Stack focado em criar soluções digitais modernas.</p>
+    <button id="cta-button">Conheça mais</button>
+  </section>
+
+  <!-- Sessões de conteúdo -->
+  <section id="sobre" class="section">
+    <h2>Sobre Mim</h2>
+    <p>Sou apaixonado por tecnologia, com experiência em desenvolvimento web e criação de aplicações escaláveis.</p>
+  </section>
+
+  <section id="projetos" class="section">
+    <h2>Meus Projetos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projeto 3</h3>
+        <p>Descrição do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Entre em Contato</h2>
+    <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Importando o JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
