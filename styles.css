@@ -49,9 +49,10 @@ body {
 }
 
 .hero {
+  height: 98vh;
   text-align: center;
   padding: 4rem 2rem;
-  background-color: #1a1a1a;
+  background-color: #000000;
 }
 
 .hero .highlight {
